@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed" style="position: sticky;top:0; z-index:1;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <li class="active"><a style="font-size: 15px;" class="navbar-brand" href="/"><span class="fa fa-2x fa-home"></span> Dashboard</a></li>
+          </div>
+          <ul class="nav navbar-nav navbar-right  direction">
+            <li><a style="font-size: 15px;" href="/profile"><span class="fa fa-2x fa-user"></span> Profile</a></li>
+            <li><a style="font-size: 15px;" href="/explore"><span class="fa fa-2x fa-wpexplorer"></span> Explore</a></li>
+            <li><a style="font-size: 15px;" href="/contact"><span class="fa fa-2x fa-id-badge"></span> Contact-Us</a></li>
+             <li><a style="font-size: 15px;" href="#"><span class="fa fa-2x fa-balance-scale"></span> Prediction</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div>
+        <div>
+            {% if data %}
+              <h1>{{data}}</h1>
+            {% endif %}
+          </div>
+    </div>
+   
+    <div class="container">
+        <form method="POST", action="{{url_for('home')}}">
+            <div class="form-group">
+                <label for="problemsolvingskills">Your Problem Soving Skills (1-10) :</label>
+                <input type="text" class="form-control" name="problemsolvingskills">
+            </div>
+
+            <div class="form-group">
+                <label for="Analyticalskills"> Analytical Ability(1-10) For example,Communication Skills, Data Interpretation Skills :</label>
+                <input type="text" class="form-control" name="analyticalskills">
+            </div>
+
+            <div class="form-group">
+                <label for="Logicalskills"> Logical skills (1-10) :</label>
+                <input type="" class="form-control" name="Logicalskills">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your Social Responsbility Skills (1-10):</label>
+                <input type="" class="form-control" name="responsbility">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="skills"> Enter 12th Maths Score  :</label>
+                <input type="" class="form-control" name="mathscore">
+            </div>
+
+            <div class="form-group">
+                <label for="skills"> Enter Your Nata  Score  :</label>
+                <input type="" class="form-control" name="nata">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your interest in Biology (1-10):</label>
+                <input type="" class="form-control" name="biology">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="Selflearning"> Thinking and reasoning Skills (1-10):</label>
+                <input type="" class="form-control" name="reasoningskills">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your Negotiation Skills (1-10):</label>
+                <input type="" class="form-control" name="Negotiation Skills">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Number Of design langauage you know:</label>
+                <input type="" class="form-control" name="lang">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate yourself in expansive thinking (1-10):</label>
+                <input type="" class="form-control" name="expansive">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate Assurity about Work (1-10):</label>
+                <input type="" class="form-control" name="Assurity">
+            </div>
+
+            <div class="form-group">
+                <label for="skills"> Enter Your NIFT  Score  :</label>
+                <input type="" class="form-control" name="niftskills">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your Typography Skills (1-10):</label>
+                <input type="" class="form-control" name="typography">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your critical thinking (1-10):</label>
+                <input type="" class="form-control" name="critical">
+            </div>
+
+            <div class="form-group">
+                <label for="skills"> Enter NEET Score :</label>
+                <input type="" class="form-control" name="neet">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate yourself in Expriemental Skills (1-10):</label>
+                <input type="" class="form-control" name="expriemental">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your communication skills (1-10):</label>
+                <input type="" class="form-control" name="communication">
+            </div>
+
+            <div class="form-group">
+                <label for="skills"> Enter PCM Score :</label>
+                <input type="" class="form-control" name="pcm">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your coding skills (1-10):</label>
+                <input type="" class="form-control" name="coding">
+            </div>
+
+            <div class="form-group">
+                <label for="skills"> Enter 12th Sci Score :</label>
+                <input type="" class="form-control" name="sciscore">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your diagnostic skills (1-10):</label>
+                <input type="" class="form-control" name="diagnostic">
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your understanding scintific literature (1-10):</label>
+                <input type="" class="form-control" name="literature">
+            </div>
+            
+            <div class="form-group">
+                <label for="Teamwork"> Are you able to do Mental Calculation  :</label> <br>
+
+                <input type="radio" id="mentalc" name="mentalc" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="mentalc" name="mentalc" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+            <div class="form-group">
+                <label for="Teamwork"> Interpret Prescription Accurately  :</label> <br>
+
+                <input type="radio" id="prescription" name="prescription" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="prescription" name="prescription" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Ready to take Care of Animals  :</label> <br>
+
+                <input type="radio" id="mentalc" name="careanimal" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="mentalc" name="careanimal" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Do you like Animals  :</label> <br>
+
+                <input type="radio" id="mentalc" name="likeanimal" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="mentalc" name="likeanimal" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Do you have selfless concern for the well being of others  :</label> <br>
+
+                <input type="radio" id="mentalc" name="others" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="mentalc" name="others" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Selflearning"> Rate your verbal communication (1-10):</label><br>
+                <input type="radio" id="mentalc" name="verbalcom" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="mentalc" name="verbalcom" value="No">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Are you team player  :</label> <br>
+
+                <input type="radio" id="teamwork" name="teamwork" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="teamwork" name="teamwork" value="No">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> What is your preference  :</label> <br>
+
+                <input type="radio" id="teamwork" name="preference" value="Technical">
+                <label for="yes">Technical</label><br>
+                <input type="radio" id="teamwork" name="preference" value="Management">
+                <label for="no">Management</label><br>
+            </div>
+
+            <div class="form-group">
+                <h4>Do you prefer Continous Learning:</h4>
+                <input type="radio" id="learning" name="conlearning" value="yes">
+                <label for="yes">Yes</label><br>
+
+                <input type="radio" id="learning" name="conlearning" value="No">
+                <label for="no">No</label><br>
+                
+                <input type="radio" id="learning" name="conlearning" value="maybe">
+                <label for="maybe">May be</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Are you patience person  :</label> <br>
+
+                <input type="radio" id="teamwork" name="patience" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="teamwork" name="patience" value="No">
+                <label for="no">No</label><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="Teamwork"> Have you more memory skills  :</label> <br>
+
+                <input type="radio" id="teamwork" name="memoryskills" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="teamwork" name="memoryskills" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> Budget For graduation :</label> <br>
+                
+                <input type="radio" id="learning" name="budget" value="Less than 50K">
+                <label for="yes">Less than 50K</label><br>
+
+                <input type="radio" id="learning" name="budget" value="Upto 1 Lakh">
+                <label for="no">Upto 1 Lakh</label><br>
+                
+                <input type="radio" id="learning" name="budget" value="Upto 6 Lakh">
+                <label for="maybe">Upto 6 Lakh</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Teamwork"> interest in research field  :</label> <br>
+
+                <input type="radio" id="teamwork" name="research" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="teamwork" name="research" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+        
+            <div class="form-group">
+                <label for="Teamwork"> Can you work in a team  :</label> <br>
+
+                <input type="radio" id="teamwork" name="workinteam" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="teamwork" name="workinteam" value="No">
+                <label for="no">No</label><br>
+
+            </div>
+        
+            <div class="form-group">
+                <label for="Selflearning"> Self Learning Capability     :</label> <br>
+
+                <input type="radio" id="learning" name="selflearning" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="learning" name="selflearning" value="No">
+                <label for="no">No</label><br>
+            </div>
+            <button type="submit" class="btn btn-success" style="margin-left: 100px; margin-bottom: 50px;">End Test</button></a>
+        </form> 
+    </div>
+</body>
+</html>

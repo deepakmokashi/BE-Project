@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+#h2mission{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+img{
+    width: 100%;
+    opacity: 0.3;
+}
+#ourmission {
+    text-align: center;
+    position: absolute;
+    /*padding-left: 40%;
+    padding-top: 0;*/
+    
+}
+#h1mission{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    padding-left: 50px;
+    margin-left: auto;
+    padding-top: 0%;
+    font-family:"Nike TG", "Arial black", "Arial Bold", Arial, sans-serif;
+    
+}
+i {
+font-family: fontawesome !important;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:'/contact.jpeg';
+    background-size: cover;
+    margin-top: -20px;
+}
+.contact .content
+{
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+
+}
+/*.contact .content p{
+   
+    font-weight: 300;
+    color: #fff;
+    
+}*/ 
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex; 
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(251, 251, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}  
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(29, 27, 27);
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(8, 8, 8);
+    
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: rgb(236, 232, 232);
+
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactform .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;  
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}

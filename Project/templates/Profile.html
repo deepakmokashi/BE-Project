@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed" style="position: sticky;top:0; z-index:1;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <li class="active"><a style="font-size: 15px;" class="navbar-brand" href="/"><span class="fa fa-2x fa-home"></span> Dashboard</a></li>
+          </div>
+          <ul class="nav navbar-nav navbar-right  direction">
+            <li><a style="font-size: 15px;" href="/profile"><span class="fa fa-2x fa-user"></span> Profile</a></li>
+            <li><a style="font-size: 15px;" href="/explore"><span class="fa fa-2x fa-wpexplorer"></span> Explore</a></li>
+            <li><a style="font-size: 15px;" href="/contact"><span class="fa fa-2x fa-id-badge"></span> Contact-Us</a></li>
+            <li><a style="font-size: 15px;" href="#"><span class="fa fa-2x fa-balance-scale"></span> Prediction</a></li>
+          </ul>
+        </div>
+    </nav>
+      
+       <div class="container">
+           <h2 style="text-align: center;color:brown;">Account Information</h2>
+           <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right
+           :500px;">
+       </div>
+       <div class="Edit-profile">
+          <button type="button" class="btn btn-primary">Edit profile</button>
+       </div>
+
+       <div class="row Main-info">
+           <div class="col-md-6">
+            <div class="thumbnail" style="margin-left: 150px;margin-right: 40px; width: 300px;">
+                <img src="{{ url_for('static',filename = 'images/profie.png')}}" alt="Profile-Photo" width=300px height=300px>
+            </div>
+  
+           </div>
+
+           <div class="col-md-6">
+            <form class="form-design">
+                <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="name" class="form-control" id="exampleInputName"  placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email Id</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter Email-id">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputMobile">Mobile No</label>
+                    <input type="monile" class="form-control" id="exampleInputmobile" placeholder="Enter Mobile No">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputSocialMediaLink">Social Media Link</label>
+                    <input type="docialmedia" class="form-control" id="exampleInputSocialMediaLink" placeholder="Enter Social Media Link">
+                </div>
+            </form>
+              
+           </div>
+           
+       </div>
+
+       <div class="save">
+          <button type="button" class="btn btn-primary" style="margin-top: 20px;">Save</button>
+       </div>
+
+
+</body>
+</html>

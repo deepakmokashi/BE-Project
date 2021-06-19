@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  .direction
+  {
+    float:right;
+  }
+  h4
+  {
+    text-align: center;
+  }
+  .btn
+  {
+    width:100%;
+  }
+  .row
+  {
+    max-height:  100px;
+  }
+ .navbar-fixed
+ {
+   position: sticky;
+   top: 0;
+ }
+ .Edit-profile
+ {
+   margin-left: 50px;
+   margin-right: 1200px;
+ }
+ .save
+ {
+   text-align: center;
+   margin-left: 550px;
+   margin-right: 550px;
+ }
+ .form-design
+ {
+     margin-right: 50px;
+ }
+ .Main-info
+ {
+   margin-top: 30px;
+ }

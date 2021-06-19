@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap" rel="stylesheet">  -->
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed" style="position: sticky;top:0; z-index:1;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <li class="active"><a style="font-size: 15px;" class="navbar-brand" href="/"><span class="fa fa-2x fa-home"></span> Dashboard</a></li>
+          </div>
+          <ul class="nav navbar-nav navbar-right  direction">
+            <li><a style="font-size: 15px;" href="/profile"><span class="fa fa-2x fa-user"></span> Profile</a></li>
+            <li><a style="font-size: 15px;" href="/explore"><span class="fa fa-2x fa-wpexplorer"></span> Explore</a></li>
+            <li><a style="font-size: 15px;" href="/contact"><span class="fa fa-2x fa-id-badge"></span> Contact-Us</a></li>
+              <li><a style="font-size: 15px;" href="#"><span class="fa fa-2x fa-balance-scale"></span> Prediction</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+    <div class="container" style="font-family: 'Roboto', sans-serif;">
+      
+        <h2 style="text-align: center;color:brown;">Engineering</h2>
+        <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+        <div class="row">
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Eng.jpg')}}" alt="Engineering" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+        </div>
+      
+        <div class="col-md-7">
+          <h4>Engineering is the use of scientific principles to design and build machines, 
+            structures, and other items, including bridges, tunnels, roads, vehicles, and buildings.<br>
+            An Engineer’s duties and responsibilities ensure the safety and effectiveness of a process, system or product. 
+            Engineers work within a team and must be able to cooperate with other coworkers to ensure the success of a project.
+          </h4>
+          <a href="https://en.wikipedia.org/wiki/Engineering#:~:text=Engineering%20is%20the%20use%20of%20scientific%20principles%20to,items%2C%20including%20bridges%2C%20tunnels%2C%20roads%2C%20vehicles%2C%20and%20buildings."><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+        </div>
+       </div>
+    
+
+      <h2 style="text-align: center;color:brown;">Bsc</h2>
+      <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+      <div class="row">
+        <div class="col-md-7">
+          <h4>What is the meaning of BSc IT? A. The full form of BSc IT is a Bachelor of Science in Information Technology. BSc IT is a bachelor’s degree awarded for an undergraduate course in the Information Technology field. 
+            Students seeking career opportunities in IT and software can opt for a BSc IT diploma or course.
+           There are typically two types of BSc degrees awarded to students – BSc Honours and BSc General (commonly known as BSc Pass).
+             Both the academic degrees are awarded to students at an undergraduate level.</h4>
+
+          <a href="https://www.shiksha.com/b-sc-chp#:~:text=What%20is%20B.Sc.%3F%20Bachelor%20of%20Science%20%28BSc%29%20is,is%20Bachelor%20of%20Science%20%28Baccalaureus%20Scientiae%20in%20Latin%29."><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+        </div>
+      
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Bsc.jpeg')}}" alt="Bsc" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+      
+        </div>
+      </div>
+  
+      <h2 style="text-align: center;color:brown;">Medical</h2>
+      <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+        <div class="row">
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Medical.jpg')}}" alt="Medical" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+        </div>
+      
+        <div class="col-md-7">
+           <h4>Medicine is the science and practice of caring for a patient and managing the diagnosis, 
+             prognosis, prevention, treatment or palliation of their injury or disease.
+             Medical education is education related to the practice of being a medical practitioner, including the initial training to become a physician (i.e., medical school and internship)
+              and additional training thereafter (e.g., residency, fellowship and continuing medical education).
+            </h4>
+            <a href="https://en.wikipedia.org/wiki/Medical_education"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+          </div>
+      </div>
+    
+
+      <h2 style="text-align: center;color:brown;">Pharmacy</h2>
+      <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+      <div class="row">
+        <div class="col-md-7">
+          <h4>Pharmacy Education journal provides a research, development and evaluation forum for communication between academic teachers, researchers and practitioners in professional and pharmacy education, with an emphasis on new and established teaching and learning methods, new curriculum and syllabus directions, 
+            educational outcomes, guidance on structuring courses and assessing achievement.</h4>
+
+            <a href="https://en.wikipedia.org/wiki/Pharmacy"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+
+        </div>
+      
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Pharmacy.jpg')}}" alt="pharmacy" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+      
+        </div>
+      </div>
+      
+      
+      <h2 style="text-align: center;color:brown;">Bcs</h2>
+        <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+        <div class="row">
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Bcs.jpg')}}" alt="Bcs" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+        </div>
+      
+        <div class="col-md-7">
+               
+          <h4>The BCS degree is a 4-year degree meant to meet and exceed CIPS and ACM standards for undergraduate programs by providing a mix of computational theory, systems and architecture knowledge, 
+            problem solving, systems analysis and application development skills and experience.
+            The course curriculum includes Theory Papers and Laboratory Practical’s based on mathematical and theoretical foundations of computing. </h4>
+            <a href="https://collegedunia.com/courses/bachelors-of-computer-science-bcs"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+  
+        </div>
+      </div>
+    
+
+      <h2 style="text-align: center;color:brown;">Veterinary Bcs</h2>
+      <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+      <div class="row">
+        <div class="col-md-7">
+          <h4>BVSc or Bachelor of Veterinary Science is an undergraduate degree that comes under medical discipline.BVSc full form is Bachelor of Veterinary Science. The course duration is 5½ years with last 6 months being compulsory internship tenure.
+             BVSc is also called BVSc and AH which is elaborated as Bachelor of Veterinary Science and Animal Husbandry.
+             he course is also referred to as B.V.Sc. & AHB, an abbreviated form for Bachelors in Veterinary Science and Animal Husbandry.</h4>
+             <a href="https://targetstudy.com/courses/bvsc.html"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+
+        </div>
+      
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Veterinary.jpg')}}" alt="Veterinary Bcs" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+      
+        </div>
+      </div>
+
+      <h2 style="text-align: center;color:brown;">Design</h2>
+        <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+        <div class="row">
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Design.jpg')}}" alt="Design" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+        </div>
+      
+        <div class="col-md-7">
+            <h4>The B.Tech. in Computer Science and Design aims to develop graduates that are not only well versed with computing approaches, tools, and technologies, 
+              but are also experienced with Design approaches and new Media technologies and uses.
+              Computer Science and Design, BS. The combined major in computer science and design integrates fundamental design courses with a strong programming foundation. 
+              Students will declare a concentration in interaction design, graphic and information design, or experience design.</h4>
+             
+              <a href="https://worlduniversityofdesign.ac.in/bdes-computer-science-design.php"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+
+      
+        </div>
+      </div>
+    
+
+      <h2 style="text-align: center;color:brown;">Architecture</h2>
+      <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right :500px;">
+      <div class="row">
+        <div class="col-md-7">
+          <h4>Architecture, the art and technique of designing and building, as distinguished from the skills associated with construction. 
+            The practice of architecture is employed to fulfill both practical and expressive requirements, 
+            and thus it serves both utilitarian and aesthetic ends.The architectural description tells us what components we need. The component design effort builds those components in conformance to the architecture and specification. 
+            The components will in general include both hardware—FPGAs, boards, and so on—and software modules.</h4>
+            <a href="https://www.britannica.com/topic/architecture"><button type="button" class="btn btn-success" style="margin-left: 10px;">Read More</button></a>
+
+        </div>
+      
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename = 'images/Interior.jpg')}}" alt="Architecture" style="width:100%;height:250px">
+            <!-- <h4">Engineering</h4> -->
+            <!-- <button type="button" class="btn btn-success">Explore</button> -->
+          </div>
+      
+        </div>
+      </div>

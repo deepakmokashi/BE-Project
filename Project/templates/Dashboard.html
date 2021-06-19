@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/style1.css')}}">
+    <!--  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+    <title>Dashbord</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed" style="position: sticky;top:0; z-index:1;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <li class="active"><a style="font-size: 15px;" class="navbar-brand" href="/"><span class="fa fa-2x fa-home"></span> Dashboard</a></li>
+          </div>
+          <ul class="nav navbar-nav navbar-right  direction">
+            <li><a style="font-size: 15px;" href="/profile"><span class="fa fa-2x fa-user"></span> Profile</a></li>
+            <li><a style="font-size: 15px;" href="/explore"><span class="fa fa-2x fa-wpexplorer"></span> Explore</a></li>
+            <li><a style="font-size: 15px;" href="/contact"><span class="fa fa-2x fa-id-badge"></span> Contact-Us</a></li>
+            <li><a style="font-size: 15px;" href="#"><span class="fa fa-2x fa-balance-scale"></span> Prediction</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+         
+      <!--marquee scrollamount="15">
+        <img src="Images/Bcs.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Bsc.jpeg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Design.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Eng.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Interior.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Medical.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Pharmacy.jpg" width="300" height="300" >
+        <img src="Updated_952021/BE-App/Images/Veterinary.jpg" width="300" height="300" >
+     </marquee> 
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                  <img src="Images/Eng.jpg" alt="Engineering" style="width:100%;height:250px">
+                  <h4>Engineering</h4>
+                  <button type="button" class="btn btn-success">Explore</button>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="Images/Medical.jpg" alt="Medical" style="width:100%;height:250px">
+                <h4>Medical</h4>
+                <button type="button" class="btn btn-success">Explore</button>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                  <img src="Images/Design.jpg" alt="Architecture" style="width:100%;height:250px">
+                  <h4>Architecture</h4>
+                  <button type="button" class="btn btn-success">Explore</button>
+              </div>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="Images/Bsc.jpeg" alt="Bsc" style="width:100%;height:250px">
+                <h4>Bsc</h4>
+                <button type="button" class="btn btn-success">Explore</button>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="Images/Bcs.jpg" alt="Bcs" style="width:100%;height:250px">
+              <h4>Bcs</h4>
+              <button type="button" class="btn btn-success">Explore</button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="Images/Pharmacy.jpg" alt="Pharmacy" style="width:100%;height:250px">
+                <h4>Design</h4>
+                <button type="button" class="btn btn-success">Explore</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="Images/Interior.jpg" alt="Interior" style="width:100%;height:250px">
+                <h4>Interior Design</h4>
+                <button type="button" class="btn btn-success">Explore</button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="Images/Veterinary.jpg" alt="Pharmacy" style="width:100%;height:250px">
+                <h4>Design</h4>
+                <button type="button" class="btn btn-success">Explore</button>
+            </div>
+          </div>-->
+          
+          <div class="container" >
+            <h2 style="text-align: center;color:brown;">Domains List</h2>
+            <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right
+             :500px;">
+
+            <div class="w3-content w3-section" style="max-width:500px; margin-right:300px;">
+              <img class="mySlides" src="./Images/Bcs.jpg" style="width:100%;height:250px">
+              <!-- <figcaption><h4>Bcs</h4></figcaption> -->
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Bsc.jpeg')}}"style="width:100%;height:250px">
+              <h4>Bcs</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Design.jpg')}}" style="width:100%;height:250px">
+              <h4>Design</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Eng.jpg')}}" style="width:100%;height:250px">
+              <h4>Engineering</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Interior.jpg')}}" style="width:100%;height:250px">
+              <h4>Architecture</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Pharmacy.jpg')}}"style="width:100%;height:250px">
+              <h4>Bsc</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Medical.jpg')}}" style="width:100%;height:250px">
+              <h4>Medical</h4>
+              <img class="mySlides" src="{{ url_for('static',filename = 'images/Veterinary.jpg')}}" style="width:100%;height:250px">
+              <h4>Veterinary Bsc</h4>
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+          
+           <h2 style="text-align: center;color:brown;">Test Datails</h2>
+           <hr style=" border: 1px solid red;  border-radius: 2px; background-color:#FFBD33; margin-left:500px;margin-right
+           :500px;">
+
+          <div class="col-md-4" style="margin-left:400px;">
+            <div class="thumbnail">
+                <img src="{{ url_for('static',filename = 'images/career_development.jpg')}}" alt="Test" style="width:100%;height:250px">
+                <h4>Ready For Test</h4>
+                <a href="/form"><button type="button" class="btn btn-success">Start Test</button></a>
+            </div>
+          </div>
+        </div>
+    </div>
+   </div>
+</div>
+          
+</body> 
+</html>
